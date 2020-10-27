@@ -1,0 +1,32 @@
+:root {
+	--primary-color: #1D3557;
+	--secondary-color: #457B9D;
+	--accent1-color: #A8DADC;
+    --accent2-color: #F1FAEE;
+    --accent3-color: #E63946;
+	--heading-font: "IM Fell French Canon SC";
+	--paragraph-font: "Roboto", Helvetica, sans-serif
+}
+
+header, main, footer {
+	max-width: 960px;
+	margin: 0 auto;
+	
+  }
+
+body{
+	background-color: #A8DADC;
+}
+
+p{
+	background-color: #F1FAEE;
+	font-family: Arial;
+
+}
+
+nav{
+	color: blue;
+	font-family: "Lucida Console";
+	
+}
+
