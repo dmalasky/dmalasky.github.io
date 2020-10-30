@@ -8,25 +8,65 @@
 	--paragraph-font: "Roboto", Helvetica, sans-serif
 }
 
+body{
+	background-color: #A8DADC;
+	font-family: "Roboto", Helvetica, sans-serif;
+}
+
 header, main, footer {
 	max-width: 960px;
 	margin: 0 auto;
 	
-  }
+}
 
-body{
-	background-color: #A8DADC;
+header{
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	/* justify-content:left; */
+}
+
+header img {
+	width: 125px;
+	height: auto;
+}
+.heading h1 {
+	font-size: 2rem;
+	color: navy;
+	margin: 0;
+	display: flex;
+}
+
+main{
+	padding: 0px 0px 0px 100px;
+	/* margin: 6px; */
 }
 
 p{
 	background-color: #F1FAEE;
-	font-family: Arial;
+	width: 400px;
+	
 
+}
+
+nav > ul{
+	list-style-type: none;
+	display: flex;
+	
+	/* flex: 1; */
+}
+
+nav li{
+	padding: 20px;
 }
 
 nav{
 	color: blue;
 	font-family: "Lucida Console";
-	
+	font-size: .8rem;
+	text-align: center;
+	justify-content:right;
+	/* line-height: 30px; */
+	/* padding: 20px; */
 }
 
