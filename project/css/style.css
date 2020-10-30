@@ -38,13 +38,15 @@ header img {
 }
 
 main{
-	padding: 0px 0px 0px 100px;
+	padding: 0px 100px 0px 100px;
 	/* margin: 6px; */
 }
 
-p{
+
+.par{
 	background-color: #F1FAEE;
 	width: 400px;
+	align
 	
 
 }
@@ -68,5 +70,13 @@ nav{
 	justify-content:right;
 	/* line-height: 30px; */
 	/* padding: 20px; */
+}
+
+.social{
+	display: flex;
+}
+
+.contact{
+	display: flex;
 }
 
