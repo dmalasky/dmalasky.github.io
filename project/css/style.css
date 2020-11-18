@@ -179,10 +179,6 @@ footer{
 	text-align: center;
 }
 
-
-
-
-    
 .action {
     grid-column: 1 ;
     grid-row: 1;
@@ -199,5 +195,140 @@ footer{
     font-size: 1.2em;
 }
 
+.a_mainbody{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding-top: 20px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+.a_section1{
+	align-content: center;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+.a_section2{
+	align-content: center;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	
+}
+.a_section3{
+	align-content: center;
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+
+}
+.a_section4{
+	align-content: center;
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+
+}
+.a_par{
+	background-color: lightgray;
+	display: flex;
+	padding: 10px;
+}
+
+.t_section1{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	background-color: lightcoral;
+	color: black;
+	padding: 10px;
+}
+.t_section2{
+	align-content: center;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	background-color: lightcoral;
+	color: black;
+	padding: 10px;
+	
+}
+.t_section3{
+	align-content: center;
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+	background-color: lightcoral;
+	color: black;
+	padding: 10px;
+
+}
+
+#feedback{
+	text-align: center;
+	color: purple;
+	font-size: 25px;
+	padding: 10px 10px 20px 10px;
+	
+	
+}
+form {
+	/* Center the form on the page */
+	margin: 0 auto;
+	width: 800px;
+	/* Form outline */
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 1em;
+}
+
+.r_ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 
 
+
+form li + li {
+	margin-top: 1em;
+	
+}
+
+label {
+	/* Uniform size & alignment */
+	display: inline-block;
+	width: 150px;
+	text-align: left;
+}
+
+input, textarea {
+	/* To make sure that all text fields have the same font settings
+		By default, textareas have a monospace font */
+	font: 1em sans-serif;
+
+	/* Uniform text field size */
+	width: 400px;
+	box-sizing: border-box;
+
+	/* Match form field borders */
+	border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+	/* Additional highlight for focused elements */
+	border-color: #000;
+}
+
+textarea {
+	/* Align multiline text fields with their labels */
+	vertical-align: top;
+
+	/* Provide space to type some text */
+	height: 5em;
+}
+
+.button {
+	/* Align buttons with the text fields */
+	padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+	/* This extra margin represent roughly the same space as the space
+		between the labels and their text fields */
+	margin-left: .5em;
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Stay the night near the temple of your choice">
+    <title>Temple Inn & Suites | Your Home Away From Home | 215-529-9999</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        
+        <picture>
+            <img src="images/hotelp.png" alt="hotel">
+        </picture>
+        
+        <section class = "heading">
+            <h1>Temple Inn & Suites </h1>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="amenities.html">Amentities</a></li>
+                <li><a href="templespotlight.html">Temple Spotlight</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul class = r_ul>
+                <div class = "guest_info">
+                    <h2>Guest Information</h2>
+                    <li>
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail</label>
+                        <br>
+                        <input type="email" id="mail" name="user_email" placeholder = "qwerty@asdf.com ">
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number</label>
+                        <br>
+                        <input type="tel" id="phone" name="user_phone" placeholder = "555-555-5555">
+                    </li>
+                </div>
+                <div class = "payment">
+                <h2>Payment</h2>
+                    <li>
+                        <label for="cname">Name on Card</label>
+                        <br>
+                        <input type="text" id="cname" name="cardname">
+                    </li>
+                    <li>    
+                        <label for="ccnum">Credit card number</label>
+                        <br>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    </li>
+                    <li>   
+                        <label for="expmonth">Exp Month</label>
+                        <br>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    </li>
+                    <li>
+                        <label for="expyear">Exp Year</label>
+                        <br>
+                        <input type="text" id="expyear" name="expyear" placeholder="2024">
+                    </li>
+                    <li>  
+                        <label for="cvv">CVV</label>
+                        <br>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </li>
+                    
+                </div>
+                <li class="button">
+                    <button type="submit">Book Now</button>
+                </li>
+            </ul>
+        </form>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form element so we can read what was entered in it.
+        const formElement = document.forms[0];
+        
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+          // stop the form from doing the default action
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML = 'Thank you for booking, enjoy your stay! ';
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+        });
+    </script>
+        
+    </main>
+    <footer>
+        <!-- <hr> -->
+        <p class = "contact"> 
+            <br>📍Temple Inn & Suites Headquarters
+            <br>355 Wisconsin Avenue
+            <br>Bethesda, MD 20814
+            <br>📞 215-829-9999
+            <br>📧 info@templinn.com
+        </p>
+
+        <div class = "social">
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"></a>
+        </div>
+        <!-- <hr> -->
+        <p class = "bottom">
+            Copyright @ 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statemnet | Daniel Malasky
+        </p>
+        
+    </footer>
+</body>
+
+</html>
