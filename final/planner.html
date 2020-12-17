@@ -4,13 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Stay the night near the temple of your choice">
+    <meta name="description" content="Learn about the importance of working out, view exmaple exercises and make your own workout plan.">
     <title>MyFitnessPlan</title>
     <link rel="stylesheet" href="css/style.css">
     
 </head>
 
 <body>
+    <header>
+        
+        <picture>
+            <img src="images/dumbbell.png" alt="gym">
+        </picture>
+        
+        <section class = "heading">
+            <h1>MyFitnessPlan </h1>
+        </section>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Program Design</a></li>
+                <li><a href="special-populations.html">Special Populations</a></li>
+                <li><a href="planner.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="images/hero2.jpg" alt="hero image">
+        
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul class = r_ul>
+                <div class = "guest_info">
+                    <h2>Contact a Trainer</h2>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail</label>
+                        
+                        <input type="email" id="mail" name="user_email" placeholder = "qwerty@asdf.com ">
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number</label>
+                        
+                        <input type="tel" id="phone" name="user_phone" placeholder = "555-555-5555">
+                    </li>
+                    <li>
+                        <!-- meet with a trainer or make a plan for me,  -->
+                        <label for="comments">Comments</label>
+                        
+                        <textarea name="information" id="comments" placeholder="Write your message"></textarea>
+                    </li>
+                </div>
+   
+                </div>
+                <li class="button">
+                    <button type="submit">Send</button>
+                </li>
+            </ul>
+        </form>
+        <div id="bottom_space"></div>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form element so we can read what was entered in it.
+            const formElement = document.forms[0];
+            
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Thank you for your request, we will contact you ASAP';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            });
+        </script>
+        <h2>Our Trainers</h2>
+        <div class="cards">
+            
+            <article class="card">
+                <img class="card-img" src="images/john.jpg" alt="img">
+                <p class="card-p">
+                    John has been a certified personal trainer for 4 years now. He has an unmatched passion for fitness and health and finds fulfillment in helping others achieve their goals.
+                </p>
+                <footer class="card_footer">
+                    <p>
+                        John
+                    </p>
+                </footer>
+            </article>
+
+            <article class="card">
+                <img class="card-img" src="images/brittany.jpg" alt="img">
+                <p class="card-p">
+                    Brittany has been training with us since 2015, She loves working with others and helping them meet their goals. She brings energy, patience and encouragement to her sessions 
+                </p>
+                <footer class="card_footer">
+                    <p>
+                        Brittany
+                    </p>
+                    </footer>
+            </article>
+        
+        </div>
+        <div class="bottom_space"></div>
+    </main>
+    <footer>
+            
+        <p class="contact"> 
+            <br>For Business Inquiries
+            <br>201-615-8468
+            <br>MyFitnessPlan@Gmail.com
+        </p>
+
+        <div class = "social">
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"></a>
+        </div>
+        
+        <p class = "bottom">
+            Copyright @ MyFitnessPlan | All Rights Reserved | <a href="final-site-plan.html">Site Plan</a> | Daniel Malasky
+        </p>
+        
+    </footer>
+</body>
+
+</html>
+
+
+<!-- <body>
     rn im thinking checkboxes with exercises listed by muscle. like a shopping page ( will need a filter)
     ex. select triceps, chest, and shoulders and only show workouts that focus on those muscles. then allow the user to select a couple.
 
@@ -20,4 +147,4 @@
 
     i would like for type of workout to print the selected workouts with the recomended sets and reps chosen for them or if thats to hard add 
     a note next to the sets and reps form box "Refer to the workout type page" or just add the chart for reference.
-</body>
+</body> -->
